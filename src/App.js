@@ -13,18 +13,23 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Presentation/>
-        </Route>
-        <Route exact path="/selection">
-          <Selection/>
-        </Route>
-        <Route exact path="/resultado">
-          <EstadoResultados/>
-        </Route>
-      </Switch>
+    <Router >
+      <div className="container pt-3">
+        <Link to="/">
+                  <h2>Principal</h2>
+              </Link>
+        <Switch>
+          <Route exact path="/">
+            <Presentation/>
+          </Route>
+          <Route exact path="/selection">
+            <Selection/>
+          </Route>
+          <Route exact path="/resultado">
+            <EstadoResultados/>
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
