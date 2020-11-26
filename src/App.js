@@ -3,6 +3,7 @@ import './App.css'
 import Presentation from './presentation/Presentation'
 import Selection from './selection/Selection'
 import EstadoResultados from './estado_resultados/EstadoResultados'
+import Razones from './razones/Razones'
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/resultado">
             <EstadoResultados/>
+          </Route>
+          <Route exact path="/razones">
+            <Razones/>
           </Route>
         </Switch>
       </div>

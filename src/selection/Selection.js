@@ -19,9 +19,11 @@ function Selection() {
                     </Link>
                 </div>
                 <div className="col">
-                    <button>
-                        Generar todo
-                    </button>
+                    <Link to="/razones">
+                        <button>
+                            Razones financieras
+                        </button>
+                    </Link>
                 </div>
             </div>
         </div>
